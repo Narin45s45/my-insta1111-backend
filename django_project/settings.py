@@ -26,8 +26,17 @@ SECRET_KEY = 'django-insecure-4ju2n@$f9d0c=h)_g0lbb%k9&@rf(xa$d$g$&5ri$uf)*gev^4
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://my-insta-frontend.liara.run",
+]
+
+# کد بالا را پاک کرده و این را جایگزین کنید
+# ❗ فراموش نکنید که آدرس‌های واقعی برنامه‌هایتان در لیارا را جایگزین کنید
 CSRF_TRUSTED_ORIGINS = [
-    "https://" + domain for domain in os.environ["REPLIT_DOMAINS"].split(',')
+    'https://my-insta-frontend.liara.run',
+    'https://onesta.liara.run',
 ]
 
 # Application definition
